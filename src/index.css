@@ -1,0 +1,109 @@
+@layer reset {
+    *, *::before, *::after {
+        box-sizing: border-box;
+        color: white;
+    }
+    * {
+        margin: 0;
+    }
+    body {
+        background-color: 	#000;
+        line-height: 1.5;
+        -webkit-font-smoothing: antialiased;
+        font-family: "CircularSpotifyTxT-Black";
+    }
+    input, button, textarea, select {
+        font: inherit;
+    }
+    p, h1, h2, h3, h4, h5, h6 {
+        overflow-wrap: break-word;
+    }
+    #root, #__next {
+        isolation: isolate;
+    }
+    a{
+        text-decoration: none;
+    }
+    ul{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    span {
+        color: #b3b3b3;
+    }
+}
+@layer font {
+    @import url(https://db.onlinewebfonts.com/c/01173b246d9d9ea808ea75a26b3b61bb?family=CircularSpotifyTxT-Black);
+    @font-face {
+        font-family: "CircularSpotifyTxT-Black";
+        src: url("https://db.onlinewebfonts.com/t/01173b246d9d9ea808ea75a26b3b61bb.eot");
+        src: url("https://db.onlinewebfonts.com/t/01173b246d9d9ea808ea75a26b3b61bb.eot?#iefix")format("embedded-opentype"),
+        url("https://db.onlinewebfonts.com/t/01173b246d9d9ea808ea75a26b3b61bb.woff2")format("woff2"),
+        url("https://db.onlinewebfonts.com/t/01173b246d9d9ea808ea75a26b3b61bb.woff")format("woff"),
+        url("https://db.onlinewebfonts.com/t/01173b246d9d9ea808ea75a26b3b61bb.ttf")format("truetype"),
+        url("https://db.onlinewebfonts.com/t/01173b246d9d9ea808ea75a26b3b61bb.svg#CircularSpotifyTxT-Black")format("svg");
+    }
+}
+@layer sidebar {
+    .side-bar {
+        height: 100vh;
+        width: 280px;
+        margin: 9px ;
+    }
+    .side-bar .logo{
+        margin: 20px;
+    }
+    .side-bar #home-icon {
+        fill: #b3b3b3;
+    }
+    .side-bar #search-icon {
+        fill: #b3b3b3;
+    }
+    .side-bar .middle-menu {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    .side-bar .middle-menu .middle-menu-li {
+        margin-bottom: 25px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+    .side-bar .middle-menu .middle-menu-li:hover span  {
+        color: 	#fff !important;
+    }
+    .side-bar .middle-menu .middle-menu-li:hover #search-icon, .side-bar .middle-menu .middle-menu-li:hover #home-icon  {
+        fill: 	#fff !important;
+    }
+    .side-bar .top-main {
+        margin-bottom: 8px;
+        background: #121212;
+        border-radius: 9px;
+    }
+    .library-main {
+        padding: 20px;
+        margin-bottom: 8px;
+        background: #121212;
+        border-radius: 9px;
+    }
+    .library-main .library-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    .library-main .library-title {
+        display: flex;
+        gap: 20px;
+    }
+    .library-main .library-add-btn {
+        background-color: transparent;
+        border: none;
+    }
+    .library-main #plus-icon {
+        fill: #b3b3b3;
+    }
+
+}
